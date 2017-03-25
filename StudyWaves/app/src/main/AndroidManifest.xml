@@ -24,6 +24,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".controller.ListOfTest"
+            android:label="@string/title_activity_list_of_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.TestTrialsPage"
+            android:label="@string/title_activity_test_trials_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.RecordingPage"
+            android:label="@string/title_activity_recording_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
