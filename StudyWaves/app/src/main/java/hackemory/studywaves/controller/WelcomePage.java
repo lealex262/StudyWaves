@@ -1,5 +1,6 @@
 package hackemory.studywaves.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -50,5 +51,10 @@ public class WelcomePage extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void startTestList(View view) {
+        Intent intent = new Intent(this, ListOfTest.class);
+        startActivity(intent);
     }
 }
