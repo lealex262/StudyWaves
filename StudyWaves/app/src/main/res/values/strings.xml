@@ -2,4 +2,8 @@
     <string name="app_name">StudyWaves</string>
     <string name="action_settings">Settings</string>
 
+    <string name="title_activity_list_of_test">ListOfTest</string>
+    <string name="title_activity_test_trials_page">TestTrialsPage</string>
+    <string name="title_activity_recording_page">RecordingPage</string>
+
 </resources>
