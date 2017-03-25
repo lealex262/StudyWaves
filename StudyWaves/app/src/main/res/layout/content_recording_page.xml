@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="hackemory.studywaves.controller.RecordingPage"
-    tools:showIn="@layout/activity_recording_page">
+    tools:showIn="@layout/activity_recording_page"
+    android:background="@color/blue">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/muses_spinner"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/refresh"
+            android:background="@color/white"
+            android:layout_weight="0.52" />
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.43"
+            android:background="@color/white"
+            android:text="@string/connect" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="@string/disconnect" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/muses_spinner"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0.60"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:layout_above="@+id/pauseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:background="null"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="121dp" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        android:background="null"
+        android:layout_marginEnd="51dp"
+        android:layout_alignTop="@+id/pauseButton"
+        android:layout_alignEnd="@+id/editText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.97"
+            android:text="Done"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/button4"
+            android:background="@color/white"
+            android:text="Cancel" />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
