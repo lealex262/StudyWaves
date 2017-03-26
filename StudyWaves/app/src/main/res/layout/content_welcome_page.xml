@@ -24,7 +24,8 @@
         app:layout_constraintVertical_bias="0.336"
         android:layout_above="@+id/button3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="59dp" />
+        android:layout_marginBottom="59dp"
+        android:typeface="serif"/>
 
     <Button
         android:id="@+id/button3"
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:background="@color/white"
-
+        android:typeface="monospace"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="261dp"
         android:layout_alignParentBottom="true"
