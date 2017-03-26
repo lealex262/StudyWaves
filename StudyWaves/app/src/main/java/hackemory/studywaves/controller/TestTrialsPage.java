@@ -60,11 +60,11 @@ public class TestTrialsPage extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(view.getContext(), TestTrialsPage.class);
-                Bundle bundle1 = new Bundle();
-                bundle1.putInt("item", position);
-                intent.putExtras(bundle1);
-                startActivity(intent);
+                //Intent intent = new Intent(view.getContext(), .class);
+                //Bundle bundle1 = new Bundle();
+                //bundle1.putInt("item", position);
+                //intent.putExtras(bundle1);
+                //startActivity(intent);
             }
         });
     }
