@@ -18,6 +18,7 @@
         android:layout_below="@+id/muses_spinner"
         android:layout_alignParentStart="true">
 
+
         <Button
             android:id="@+id/refresh"
             android:layout_width="100dp"
@@ -42,6 +43,28 @@
             android:text="@string/disconnect" />
     </LinearLayout>
 
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:text="@string/status"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/blue"
+        android:id="@+id/textView" />
+    <TextView
+        android:id="@+id/con_status"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:text="@string/undefined"
+        android:background="@color/blue"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true" />
     <Spinner
         android:id="@+id/muses_spinner"
         android:background="@color/green"
@@ -58,12 +81,11 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="time"
-        android:layout_above="@+id/pauseButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
-        android:id="@+id/pauseButton"
+        android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="47dp"
@@ -74,13 +96,13 @@
         android:layout_marginBottom="121dp" />
 
     <ImageButton
-        android:id="@+id/playButton"
+        android:id="@+id/pauseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_media_pause"
         android:background="@color/clear"
         android:layout_marginEnd="51dp"
-        android:layout_alignTop="@+id/pauseButton"
+        android:layout_alignTop="@+id/playButton"
         android:layout_alignEnd="@+id/editText" />
 
     <LinearLayout
@@ -114,7 +136,105 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp">
 
+        <TextView
+            android:id="@+id/elem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/init_val"
+            android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/elem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/init_val" />
+        <TextView
+            android:id="@+id/elem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/init_val" />
+        <TextView
+            android:id="@+id/elem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/init_val" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:text="@string/beta"
+        android:textSize="16sp"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/belem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/init_val"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/belem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/init_val" />
+        <TextView
+            android:id="@+id/belem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/init_val" />
+        <TextView
+            android:id="@+id/belem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/init_val" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:text="@string/muse_elem"
+        android:textSize="16sp"
+        android:layout_below="@+id/pauseButton"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

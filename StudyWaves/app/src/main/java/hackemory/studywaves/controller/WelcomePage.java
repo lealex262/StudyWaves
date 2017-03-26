@@ -56,4 +56,11 @@ public class WelcomePage extends AppCompatActivity {
         Intent intent = new Intent(this, ListOfTest.class);
         startActivity(intent);
     }
+
+    // transitions directly to recorder page
+    // for testing purposes only
+    public void testingPage(View view) {
+        Intent intent = new Intent(this, RecordingPage.class);
+        startActivity(intent);
+    }
 }

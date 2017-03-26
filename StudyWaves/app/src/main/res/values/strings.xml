@@ -6,10 +6,22 @@
     <string name="title_activity_test_trials_page">TestTrialsPage</string>
     <string name="title_activity_recording_page">RecordingPage</string>
 
-
+    <string name="hello_world">Hello world!</string>
     <string name="connect">Connect</string>
+    <string name="status">CONNECTION STATUS:</string>
     <string name="disconnect">Disconnect</string>
     <string name="refresh">Refresh</string>
+    <string name="init_val">0.0</string>
+    <string name="eeg">EEG data:</string>
+    <string name="accel">Accelerometer Data:</string>
+    <string name="version">Version:</string>
+    <string name="undefined">unknown</string>
+    <string name="artifacts">Blinks, Jaw: </string>
+    <string name="msg_count">Msg number, size: </string>
+    <string name="pause">Pause/Resume</string>
+    <string name="drop">Drop</string>
+    <string name="muse_elem">Alpha Relative:</string>
+    <string name="beta">Beta Relative:</string>
 
     <string name="permission_dialog_title">Muse Needs Your Permission</string>
     <string name="permission_dialog_description">Muse needs a few permissions to work properly. On the next screens, tap "Allow" to proceed. If you deny, Muse will not work properly until you go into your Android settings and allow.</string>
