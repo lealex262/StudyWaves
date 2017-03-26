@@ -35,14 +35,15 @@ public class Model {
     }
 
     private void loadData() {
-
+        tests.add(new Test("SAT", "Andrew"));
+        tests.add(new Test("ACT", "NNNN"));
     }
 
     /**
      * get the courses
      * @return a list of the courses in the app
      */
-    public List<Test> getCourses() { return tests; }
+    public List<Test> getTests() { return tests; }
 
     /**
      * add a Test to the app.  checks if the Test is already entered
@@ -52,7 +53,7 @@ public class Model {
      * @param Test  the Test to be added
      * @return true if added, false if a duplicate
      */
-    public boolean addCourse(Test Test) {
+    public boolean addTest(Test Test) {
         for (Test c : tests ) {
             if (c.equals(Test)) return false;
         }
@@ -76,5 +77,16 @@ public class Model {
      */
     public boolean addTrial(Trial trial) {
         return currentTest != null && currentTest.addTrial(trial);
+    }
+
+    public List<String> convertTestToString() {
+        int index = 0;
+        ArrayList<String> display = new ArrayList<>();
+        for (Test t: tests) {
+            if (t != null) {
+                 display.add(t.toString());
+            }
+        }
+        return display;
     }
 }

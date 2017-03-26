@@ -9,8 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import hackemory.studywaves.R;
+import hackemory.studywaves.model.Model;
+import hackemory.studywaves.model.Test;
 
 public class TestTrialsPage extends AppCompatActivity {
+    private Test test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,9 @@ public class TestTrialsPage extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Model model = Model.getInstance();
+        test = model.getTests().get(Integer.parseInt(getIntent().getExtras().getString("item")));
     }
 
     public void recordingPage(View view) {

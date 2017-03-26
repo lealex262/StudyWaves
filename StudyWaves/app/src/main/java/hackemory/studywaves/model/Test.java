@@ -50,11 +50,7 @@ public class Test {
 
     @Override
     public String toString() {
-        return "Test{" +
-                "testName='" + testName + '\'' +
-                ", tester='" + tester + '\'' +
-                ", trials=" + trials +
-                '}';
+        return testName + "    " + tester;
     }
 
     public List<Trial> getTrials() {
