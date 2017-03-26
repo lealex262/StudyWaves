@@ -19,6 +19,14 @@ public class Test {
         this.tester = tester;
     }
 
+    public boolean addTrial(Trial trial) {
+        if (trial == null) {
+            return false;
+        }
+        trials.add(trial);
+        return true;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -19,7 +19,7 @@ public class Model {
     private List<Test> tests;
 
     /** the currently selected Test, defaults to first Test */
-    private Test _currentCourse;
+    private Test currentTest;
 
 
 
@@ -64,9 +64,9 @@ public class Model {
      *
      * @return  the currently selected Test
      */
-    public Test getCurrentCourse() { return _currentCourse;}
+    public Test getCurrentCourse() { return currentTest;}
 
-    public void setCurrentCourse(Test Test) { _currentCourse = Test; }
+    public void setCurrentCourse(Test Test) { currentTest = Test; }
 
 
     /**
@@ -75,6 +75,6 @@ public class Model {
      * @return true if student added, false if not added
      */
     public boolean addTrial(Trial trial) {
-        return _currentCourse != null && _currentCourse.addTrial(trial);
+        return currentTest != null && currentTest.addTrial(trial);
     }
 }
