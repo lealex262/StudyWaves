@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
-        android:background="@color/blue"
+        android:background="@color/white"
 
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="261dp"
