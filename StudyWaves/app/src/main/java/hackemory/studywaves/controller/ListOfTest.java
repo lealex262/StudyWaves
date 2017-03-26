@@ -48,8 +48,10 @@ public class ListOfTest extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                getIntent().putExtra("item", position);
                 Intent intent = new Intent(view.getContext(), TestTrialsPage.class);
+                Bundle bundle1 = new Bundle();
+                bundle1.putInt("item", position);
+                intent.putExtras(bundle1);
                 startActivity(intent);
             }
         });

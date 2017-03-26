@@ -27,12 +27,6 @@
         tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="447dp" />
 
-    <ListView
-        android:layout_width="281dp"
-        android:layout_height="321dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="100dp" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="126dp"
@@ -52,5 +46,12 @@
         tools:layout_editor_absoluteX="201dp"
         tools:layout_editor_absoluteY="31dp"
         android:textSize="23sp"/>
+
+    <ListView
+        android:id="@+id/trial_list"
+        android:layout_width="281dp"
+        android:layout_height="321dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="95dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -17,6 +17,24 @@ public class Test {
     public Test(String testName, String tester) {
         this.testName = testName;
         this.tester = tester;
+
+        trials = new ArrayList<>();
+        loadData();
+    }
+
+    private void loadData() {
+        trials.add(new Trial());
+        trials.add(new Trial());
+        trials.add(new Trial());
+        trials.add(new Trial());
+    }
+
+    public ArrayList<String> trialsToSting() {
+        ArrayList<String> data = new ArrayList<>();
+        for (Trial t:trials) {
+            data.add("Trial " + trials.indexOf(t));
+        }
+        return data;
     }
 
     public boolean addTrial(Trial trial) {
