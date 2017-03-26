@@ -1,5 +1,6 @@
 package hackemory.studywaves.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -32,7 +33,13 @@ public class ListOfTest extends AppCompatActivity {
 
     }
 
+    public void addTestPage(View view) {
+        Intent intent = new Intent(this, AddTestPage.class);
+        startActivity(intent);
+    }
 
-
-
+    public void testTrialsPage(View view) {
+        Intent intent = new Intent(this, TestTrialsPage.class);
+        startActivity(intent);
+    }
 }

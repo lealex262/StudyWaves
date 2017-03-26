@@ -35,6 +35,10 @@
         <activity
             android:name=".controller.RecordingPage"
             android:label="@string/title_activity_recording_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.AddTestPage"
+            android:label="@string/title_activity_add_test_page"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -10,12 +10,12 @@ import android.view.View;
 
 import hackemory.studywaves.R;
 
-public class TestTrialsPage extends AppCompatActivity {
+public class AddTestPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_trials_page);
+        setContentView(R.layout.activity_add_test_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,8 +29,13 @@ public class TestTrialsPage extends AppCompatActivity {
         });
     }
 
-    public void recordingPage(View view) {
-        Intent intent = new Intent(this, RecordingPage.class);
+    public void listOfTest(View view) {
+        Intent intent = new Intent(this, ListOfTest.class);
+        startActivity(intent);
+    }
+
+    public void testTrialsPage(View view) {
+        Intent intent = new Intent(this, ListOfTest.class);
         startActivity(intent);
     }
 }

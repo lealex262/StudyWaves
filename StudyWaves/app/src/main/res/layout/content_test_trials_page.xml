@@ -13,15 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_input_add"
-        android:background="@color/clear"
+        android:background="@color/blue"
         tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="447dp" />
+        tools:layout_editor_absoluteY="447dp"
+        android:onClick="recordingPage"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/clear"
+        android:background="@color/blue"
         app:srcCompat="@android:drawable/ic_delete"
         tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="447dp" />

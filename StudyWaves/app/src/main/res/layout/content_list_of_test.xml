@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="hackemory.studywaves.controller.ListOfTest"
     tools:showIn="@layout/activity_list_of_test">
@@ -13,24 +14,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_input_add"
-        android:background="@color/clear"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="436dp" />
+        android:background="@color/blue"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:onClick="addTestPage"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/clear"
+        android:background="@color/blue"
         app:srcCompat="@android:drawable/ic_delete"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="436dp" />
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="447dp" />
 
     <ListView
-        android:layout_width="318dp"
-        android:layout_height="372dp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="41dp" />
+        android:layout_width="274dp"
+        android:layout_height="384dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="37dp" />
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

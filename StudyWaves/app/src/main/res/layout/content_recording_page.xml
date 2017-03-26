@@ -109,7 +109,8 @@
             android:layout_alignStart="@+id/editText"
             android:layout_alignTop="@+id/button4"
             android:background="@color/white"
-            android:text="Cancel" />
+            android:text="Cancel"
+            android:onClick="testTrialsPage"/>
     </LinearLayout>
 
 

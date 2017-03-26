@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="hackemory.studywaves.controller.AddTestPage"
+    tools:showIn="@layout/activity_add_test_page">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:text="Done"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:onClick="testTrialsPage"/>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:text="Cancel"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:onClick="listOfTest"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="226dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Test:"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="226dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name:"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+</android.support.constraint.ConstraintLayout>
