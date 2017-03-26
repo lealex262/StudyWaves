@@ -8,4 +8,29 @@
     tools:context="hackemory.studywaves.controller.ListOfTest"
     tools:showIn="@layout/activity_list_of_test">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:background="@null"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <ListView
+        android:layout_width="318dp"
+        android:layout_height="372dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+
 </android.support.constraint.ConstraintLayout>
